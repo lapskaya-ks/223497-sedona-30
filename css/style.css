@@ -1,0 +1,153 @@
+/*fonts*/
+
+@font-face {
+    font-family: "PTSans";
+    src: url("../fonts/PTSans.woff2") format("woff2"),
+         url("../fonts/PTSans.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PTSans";
+    src: url("../fonts/PTSans-Bold.woff2") format("woff2"),
+         url("../fonts/PTSans-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: bold;
+}
+
+/*Variables*/
+
+:root {
+
+/*background*/
+    --basic-grey: #F2F2F2;
+
+/*header*/
+    --basic-white: #FFFFFF;
+    --basic-black: #000000;
+
+/*advantages*/
+    --basic-twilight-grey: #333333;
+    --basic-blue: #81B3D2;
+    --basic-delicious-grey: #EEEEEE;
+
+/*form*/
+    --basic-brown: #766357;
+    --basic-dark-grey: #A9A9A9;
+
+/*special*/
+    /*infrastructure*/
+    --basic-dim-grey: #6A6A6A;
+    --basic-silver-grey: #ABABAB;
+    --basic-grey-orange: #766357;
+    --basic-light-grey: #CACACA;
+    /*rating*/
+    --medium-steel-grey: #666666;
+    /*button activity*/
+    --basic-mercury-grey: #E5E5E5;
+    --basic-light-blue: #669EC0;
+    --basic-dark-blue: #5496BD;
+    --basic-light-brown: #604E43;
+    --basic-dark-brown: #503E33;
+    /*form activity*/
+    --basic-pale-grey: #EBEBEB;
+    /*copy*/
+    --basic-black-grey: #231F20;
+    --basic-transparent-grey: #BDBBBC;
+}
+
+/* Global */
+
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-twilight-grey);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+}
+
+.features-text {
+  background-image: url("/img/background_photo.jpg");
+  width: 1200px;
+  height: 452px;
+  background-position: top center;
+  background-repeat: no-repeat;
+
+}
+
+.welcome {
+  background-image: url("/img/welcome_sedona.svg");
+  width: 458px;
+  height: 352px;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.shape {
+  background-image: url("/img/Shape.svg");
+  width: 1200px;
+  height: 57px;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
+.blue {
+  background-color: var(--basic-blue);
+  width: 400px;
+  height: 256px;
+}
+
+.blue h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: var(--basic-white);
+
+}
+
+.blue p {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-white);
+}
+
+.house h4,
+.food h4,
+.gifts h4 {
+  font-size: 21px;
+  line-height: 21px;
+  font-style: 400;
+  font-weight: bold;
+}
+
+.house {
+  background-image: url(/img/icon_house.svg);
+  width: 75px;
+  height: 72px;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.food {
+  background-image: url(/img/icon_food.svg);
+  width: 75px;
+  height: 72px;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.gifts {
+  background-image: url(/img/icon_gift.svg);
+  width: 75px;
+  height: 72px;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
