@@ -19,7 +19,6 @@
 /*Variables*/
 
 :root {
-
 /*background*/
     --basic-grey: #F2F2F2;
 
@@ -60,94 +59,187 @@
 /* Global */
 
 body {
-  min-width: 1200px;
+  max-width: 1200px;
   margin: 0;
   padding: 0;
-  font-family: "PT Sans Narrow", Arial, sans-serif;
-  font-weight: 400;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
+  font-weight: 400;
   color: var(--basic-twilight-grey);
   text-transform: uppercase;
   background-color: var(--basic-white);
 }
 
-.features-text {
-  background-image: url("/img/background_photo.jpg");
-  width: 1200px;
-  height: 452px;
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.title-hidden {
+  display: none;
+}
+
+/* Main navigation */
+
+.site-navigation {
+  list-style: none;
+}
+
+/* User navigation */
+
+.site-navigation a,
+.user-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.user-navigation a:hover {
+  color: var(--basic-blue);
+}
+
+.site-navigation a:focus,
+.user-navigation a:focus {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+
+.site-navigation a:visited,
+.user-navigation a:visited {
+  color: var(--basic-brown);
+}
+
+/* Welcome */
+
+.welcome-block {
+  background-image: url(/img/background_photo.jpg);
   background-position: top center;
   background-repeat: no-repeat;
-
 }
 
-.welcome {
-  background-image: url("/img/welcome_sedona.svg");
-  width: 458px;
-  height: 352px;
-  background-position: top center;
-  background-repeat: no-repeat;
+/* Features */
+
+.features-list {
+  list-style: none;
 }
 
-.shape {
-  background-image: url("/img/Shape.svg");
-  width: 1200px;
-  height: 57px;
-  background-position: bottom center;
-  background-repeat: no-repeat;
-}
-
-.blue {
-  background-color: var(--basic-blue);
-  width: 400px;
-  height: 256px;
-}
-
-.blue h3 {
+.features-title {
   font-size: 21px;
-  line-height: 21px;
+  line-height: 26px;
   font-weight: 700;
-  color: var(--basic-white);
-
 }
 
-.blue p {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  color: var(--basic-white);
+.features-desc {
+  line-height: 26px;
 }
 
-.house h4,
-.food h4,
-.gifts h4 {
+.feature-heading {
   font-size: 21px;
-  line-height: 21px;
-  font-style: 400;
-  font-weight: bold;
+  font-weight: 700;
 }
 
-.house {
+.color-white {
+  color: var(--basic-white);
+}
+
+.color-blue {
+  background-color: var(--basic-blue);
+}
+
+.feature-subtitle {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.nested-icon-house {
   background-image: url(/img/icon_house.svg);
-  width: 75px;
-  height: 72px;
   background-position: top center;
   background-repeat: no-repeat;
 }
 
-.food {
+.nested-icon-food {
   background-image: url(/img/icon_food.svg);
-  width: 75px;
-  height: 72px;
   background-position: top center;
   background-repeat: no-repeat;
 }
 
-.gifts {
+.nested-icon-gifts {
   background-image: url(/img/icon_gift.svg);
-  width: 75px;
-  height: 72px;
   background-position: top center;
   background-repeat: no-repeat;
 }
 
+.color-grey {
+  background-color: var(--basic-delicious-grey);
+}
+
+/* Apartment-search */
+
+.apartment-subtitle {
+  font-size: 30px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.apartment-text {
+  line-height: 24px;
+}
+
+/* footer */
+
+.main-footer {
+  background-color: var(--basic-white);
+  opacity: 0.9;
+}
+
+/* footer-contacts */
+
+.contacts-phone {
+  color: inherit;
+}
+
+.text-contacts {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+/* Social button */
+
+.social-button {
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+}
+
+.social-button:hover {
+  color: var(--basic-white);
+  background-color: var(--basic-light-blue);
+}
+
+.social-button:focus {
+  color: var(--basic-white);
+  background-color: var(--basic-dark-blue);
+  opacity: 0.3;
+}
+
+/* footer-copyright */
+
+.footer-copyright {
+  line-height: 26px;
+}
+
+.copyright-picture:hover {
+  background-image: url(/img/logo-htmlacademy-blue.svg);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
