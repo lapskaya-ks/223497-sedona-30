@@ -16,7 +16,6 @@
     font-style: bold;
 }
 
-/*Variables*/
 
 :root {
 /*background*/
@@ -71,7 +70,8 @@ body {
   background-color: var(--basic-white);
 }
 
-a {
+a,
+.site-link {
   text-decoration: none;
 }
 
@@ -85,6 +85,31 @@ img {
   display: none;
 }
 
+.site-navigation {
+  list-style: none;
+}
+
+.features-nested-list {
+  list-style: none;
+}
+
+.social-list {
+  list-style: none;
+}
+
+.sort-list {
+  list-style: none;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.ranking {
+  list-style: none;
+}
+
+
 /* Main navigation */
 
 .main-navigation {
@@ -92,38 +117,28 @@ img {
   color: var(--basic-black);
 }
 
-.site-navigation {
-  list-style: none;
-}
 
 /* User navigation */
 
-.site-navigation a:link,
-.user-navigation a:link {
+
+
+.site-link:link {
   color: var(--basic-black);
 }
 
-.site-navigation a:visited,
-.user-navigation a:visited {
-  color: var(--basic-brown);
 
-}
-
-.site-navigation a:hover,
-.user-navigation a:hover {
+.site-link:hover {
   color: var(--basic-blue);
 }
 
-.site-navigation a:focus,
-.user-navigation a:focus {
+.site-link:focus {
   color: var(--basic-black);
   opacity: 0.3;
 }
 
-.site-navigation a:active {
-  color: var(--basic-brown-orange); /* Не могу понять, работает это свойство или нет */
+.site-current {
+  color: var(--basic-brown);
 }
-
 
 /* Welcome */
 
@@ -146,9 +161,12 @@ img {
   font-weight: 700;
 }
 
-.subtitle-white {
-  font-size: 21px;
+.subtitle {
+  line-height: 21px;
   font-weight: 700;
+}
+
+.subtitle-white {
   color: var(--basic-white);
 }
 
@@ -266,12 +284,16 @@ img {
   background-color: var(--basic-light-blue);
 }
 
-.catalog-detail:focus {
+.catalog-detail:active {
   background-color: var(--basic-dark-blue);
-  opacity: 0.3;
+  color: rgba(255,255,255,0.3)
 }
 
 /* to book */
+
+.armoring {
+  text-transform: uppercase;
+}
 
 .catalog-button {
   color: var(--basic-white);
@@ -283,8 +305,8 @@ img {
 }
 
 .catalog-button:active {
-  opacity: 0.3;
   background-color: var(--basic-dark-brown);
+  color: rgba(255,255,255,0.3)
 }
 
 
@@ -317,7 +339,7 @@ img {
   background-color: var(--basic-light-blue);
 }
 
-.social-button:focus {
+.social-button:active {
   color: var(--basic-white);
   background-color: var(--basic-dark-blue);
   opacity: 0.3;
@@ -335,5 +357,41 @@ img {
   fill: var(--basic-transparent-grey);
 }
 
+/* filtration */
 
+.filtration:link {
+  fill: var(--basic-light-grey);
+}
 
+.filtration:hover {
+  fill: var(--basic-black);
+}
+
+.filtration:active {
+  fill: var(--basic-blue);
+}
+
+ /*sort-link */
+
+.sort-link:link {
+  color: var(--basic-light-grey);
+  border-bottom-color: #81B3D2;
+  border-bottom-style: dashed;
+  border-bottom-width: 1 px;
+}
+
+.sort-link:hover {
+  color: var(--basic-blue);
+  border-bottom-color: #81B3D2;
+  border-bottom-style: dashed;
+  border-bottom-width: 1 px;
+}
+
+.sort-link:active {
+  color: var(--basic-black);
+  border: none;
+}
+
+.sort-current {
+  color: var(--basic-blue);
+}
