@@ -16,24 +16,20 @@
         <a class="main-header-logo">
           <img src="img/header_logo.svg" width="138" height="70" alt="Логотип Sedona">
         </a>
-        <div class="main-header-bar">
-          <div class="main-navigation-wrapper">
             <ul class="site-navigation">
-              <li><a class="site-link">Информация</a></li>
-              <li><a class="site-link">Фото и видео</a></li>
-              <li><a class="site-link">Карта штата</a></li>
-              <li><a class="site-link" href="catalog.html">Гостиницы</a></li>
+              <li class="site-navigation-item"><a class="site-link">Информация</a></li>
+              <li class="site-navigation-item"><a class="site-link">Фото и видео</a></li>
+              <li class="site-navigation-item"><a class="site-link">Карта штата</a></li>
+              <li class="site-navigation-item"><a class="site-link" href="catalog.html">Гостиницы</a></li>
             </ul>
-          </div>
-        </div>
       </nav>
     </header>
     <main class="container">
       <section class="welcome">
         <h1 class="title-hidden">SEDONA</h1> <!-- Задала общий класс для всех сткрытых заголовков -->
         <div class="welcome-block">
-          <img src="/img/welcome_sedona.svg" width="458" height="352" alt="Welcome to gorgeous sedona">
-          <img src="/img/shape.svg" width="1200" height="57" alt="">
+          <img class="center-pic" src="./img/welcome_sedona.svg" width="458" height="352" alt="Welcome to gorgeous sedona">
+          <img class="shape-pic" src="./img/shape.svg" width="1200" height="57" alt="">
           <!-- Здесь будет background foto -->
         </div>
       </section>
@@ -44,27 +40,27 @@
           <li class="feature-item two-columns">
             <div class="block block-blue">
               <h3 class="subtitle subtitle-white">Настоящий городок</h3>
-              <p class="desc desc-white">— №1 —</p>
-              <p class="desc desc-white">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+              <p class="desc nubmer-white">— №1 —</p>
+              <p class="desc desc-city">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
             <img class="feature-img" src="img/image_plus1.jpg" width="800" height="256" alt="Здания Седоны">
             <ul class="two-columns">
-              <li class="feature-nested-item">
+              <li class="feature-nested-item nested-icon-house">
                 <div class="icon-house">
-                  <h4 class="subtitle">Жильё</h4>
-                  <p class="desc">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                  <h4 class="subtitle subtitle-icon subtitle-icon-house">Жильё</h4>
+                  <p class="desc desc-icon desc-icon-house">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                 </div>
               </li>
-              <li class="feature-nested-item">
+              <li class="feature-nested-item nested-icon-food">
                 <div class="icon-food">
-                  <h4 class="subtitle">Еда</h4>
-                  <p class="desc">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                  <h4 class="subtitle subtitle-icon subtitle-icon-food">Еда</h4>
+                  <p class="desc desc-icon desc-icon-food">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </div>
               </li>
-              <li class="feature-nested-item">
+              <li class="feature-nested-item nested-icon-gifts">
                 <div class="icon-gifts">
-                  <h4 class="subtitle">Сувениры</h4>
-                  <p class="desc">Не только китайского, но и местного производства!</p>
+                  <h4 class="subtitle subtitle-icon subtitle-icon-gifts">Сувениры</h4>
+                  <p class="desc desc-icon desc-icon-gifts">Не только китайского, но и местного производства!</p>
                 </div>
               </li>
             </ul>
@@ -73,29 +69,29 @@
             <img class="feature-img" src="img/image_plus5.jpg" width="800" height="256" alt="Мост дьявола в Седоне">
             <div class="block block-blue">
               <h3 class="subtitle subtitle-white">Там есть Мост дьявола</h3>
-              <p class="desc desc-white"> — №2 —</p>
-              <p class="desc desc-white">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+              <p class="desc nubmer-white"> — №2 —</p>
+              <p class="desc desc-bridge">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
           </li>
           <li class="feature-item">
             <div class="block block-grey">
-              <h3 class="subtitle">Небольшая площадь</h3>
-              <p class="desc">— №3 —</p>
-              <p class="desc">Все достопримечательности находятся очень близко</p>
+              <h3 class="subtitle subtitle-grey">Небольшая площадь</h3>
+              <p class="desc nubmer-grey">— №3 —</p>
+              <p class="desc desc-grey">Все достопримечательности находятся очень близко</p>
             </div>
           </li>
           <li class="feature-item">
             <div class="block block-grey">
-              <h3 class="subtitle">Красивая дорога</h3>
-              <p class="desc">— №4 —</p>
-              <p class="desc">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              <h3 class="subtitle subtitle-grey">Красивая дорога</h3>
+              <p class="desc nubmer-grey">— №4 —</p>
+              <p class="desc desc-grey">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </div>
           </li>
           <li class="feature-item">
             <div class="block block-grey">
-              <h3 class="subtitle">Мало туристов</h3>
-              <p class="desc">— №5 —</p>
-              <p class="desc">Большинство едет в Гранд каньон и толпится там</p>
+              <h3 class="subtitle subtitle-grey">Мало туристов</h3>
+              <p class="desc nubmer-grey">— №5 —</p>
+              <p class="desc desc-grey">Большинство едет в Гранд каньон и толпится там</p>
             </div>
           </li>
         </ul>
@@ -103,7 +99,7 @@
       <section class="apartment-search">
         <h2 class="title-hidden">Поиск гостиниц в Седоне</h2>
         <p class="desc desc-interest">Заинтересовались?</p>
-        <p class="desc desc-dates">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
+        <p class="desc desc-dates">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в
           седоне</p>
       </section>
       <!-- Здесь будет форма -->
@@ -115,48 +111,48 @@
       </section>
     </main>
     <footer class="main-footer">
-        <address class="footer-contacts">
-          <h2 class="title-hidden">Контакты</h2>
-          <p class="desc desc-contacts">#visitSEDONA</p>
-          <p class="desc desc-contacts"><a class="contacts-phone" href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a></p>
-        </address>
-        <section class="footer-social">
-          <h2 class="title-hidden">Социальные сети</h2>
-          <ul class="social-list">
-            <li class="social-item">
-              <a class="social-button" href="#">
-                <span class="title-hidden">Twitter</span>
-                <svg class="social-logo" width="17" height="16" viewBox="0 0 17 16" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34498 15.9981H4.89898C4.48898 15.9981 0.734977 15.5381 0.000976562 14.1111C2.27198 14.3071 3.89398 13.6891 4.69398 12.9341C3.73398 12.6341 2.01498 12.4571 1.71498 9.98409C2.06398 10.0901 2.27898 10.2121 2.90498 10.1031C1.70498 9.24709 0.373977 8.53009 0.447977 6.33009C0.732977 6.65809 1.51498 6.86609 1.78798 6.80209C1.08498 6.56109 -0.182023 3.44209 0.893977 1.85009C2.71198 3.70409 4.62898 5.45609 8.04598 5.62309C8.25398 3.33009 9.18298 1.79309 10.95 1.14409Z"
-                    fill="white" />
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="social-button" href="#">
-                <span class="title-hidden">Facebook</span>
-                <svg class="social-logo" width="12" height="22" viewBox="0 0 12 22" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white" />
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="social-button" href="#">
-                <span class="title-hidden">Youtube</span>
-                <svg class="social-logo" width="20" height="16" viewBox="0 0 20 16" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65 0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z"
-                    fill="white" />
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </section>
-        <div class="flex-copyright">
+      <address class="footer-contacts">
+        <h2 class="title-hidden">Контакты</h2>
+        <p class="desc desc-contacts">#visitSEDONA</p>
+        <p class="desc desc-phone"><a class="contacts-phone" href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a></p>
+      </address>
+      <section class="footer-social">
+        <h2 class="title-hidden">Социальные сети</h2>
+        <ul class="social-list">
+          <li class="social-item">
+            <a class="social-button" href="#">
+              <span class="title-hidden">Twitter</span>
+              <svg class="social-logo" width="17" height="16" viewBox="0 0 17 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34498 15.9981H4.89898C4.48898 15.9981 0.734977 15.5381 0.000976562 14.1111C2.27198 14.3071 3.89398 13.6891 4.69398 12.9341C3.73398 12.6341 2.01498 12.4571 1.71498 9.98409C2.06398 10.0901 2.27898 10.2121 2.90498 10.1031C1.70498 9.24709 0.373977 8.53009 0.447977 6.33009C0.732977 6.65809 1.51498 6.86609 1.78798 6.80209C1.08498 6.56109 -0.182023 3.44209 0.893977 1.85009C2.71198 3.70409 4.62898 5.45609 8.04598 5.62309C8.25398 3.33009 9.18298 1.79309 10.95 1.14409Z"
+                  fill="white" />
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-button" href="#">
+              <span class="title-hidden">Facebook</span>
+              <svg class="social-logo" width="12" height="22" viewBox="0 0 12 22" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white" />
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-button" href="#">
+              <span class="title-hidden">Youtube</span>
+              <svg class="social-logo" width="20" height="16" viewBox="0 0 20 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65 0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z"
+                  fill="white" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <div class="flex-copyright">
         <p class="desc desc-copyright">
           Website by
           <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">
@@ -166,8 +162,8 @@
                 fill="#231F20" />
             </svg>
           </a>
-        </div>
         </p>
+      </div>
     </footer>
 </body>
 
