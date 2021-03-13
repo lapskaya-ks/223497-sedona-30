@@ -89,9 +89,6 @@ ul{
   margin: 0px;
 }
 
-.site-navigation {
-  list-style: none;
-}
 
 .features-nested-list {
   list-style: none;
@@ -300,7 +297,7 @@ ul{
 .desc-apartment {
   padding-top: 58px;
   padding-right: 382px;
-  padding-bottom: 110px;
+  padding-bottom: 24px;
   padding-left: 381px;
 }
 
@@ -724,6 +721,8 @@ ul{
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   margin-top: 0px;
   padding-top: 15px;
+  list-style: none;
+  margin-bottom: 0px;
 }
 
 .site-navigation-item {
@@ -766,24 +765,97 @@ ul{
 
 .main-form {
   display: flex;
-  padding: 12px 73px 32px 73px;
+  padding: 26px 73px 32px 73px;
   text-transform: uppercase;
-}
-
-.desc-filter {
-  font-size: 16px;
-  line-height: 21px;
-  font-weight: 700;
   color: var(--basic-white);
 }
 
-input {
-  border: none;
-  outline:none;
+.filter-subtitle {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.filter-label {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-white);
+  padding-left: 40px;
+  cursor: pointer;
+}
+
+.filter-item {
+  margin-bottom: 25px;
+}
+
+.site-filter {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.site-filter .filter-item:last-child {
+  margin-bottom: 0px;
 }
 
 
-.btn-transparent {
+.filter-infrastructure {
+  margin-right: 119px;
+  max-width: 256px;
+  border: none;
+}
+
+.filter-housing {
+  max-width: 274px;
+  border: none;
+}
+
+.filter-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: absolute;
+}
+
+.check-box {
+  position: absolute;
+  width: 27px;
+  height: 23px;
+  background-image: url(../img/checkbox-off-new.svg);
+  background-repeat: no-repeat;
+  margin-left: -40px;
+
+}
+
+.filter-checkbox:checked + .check-box {
+  background-image: url(../img/checkbox-on.svg);
+  background-repeat: no-repeat;
+}
+
+.filter-checkbox:disabled + .check-box {
+  background-image: url(../img/checkbox-off-disabled.svg);
+  background-repeat: no-repeat;
+}
+
+.filter-checkbox:checked:disabled + .check-box {
+  background-image: url(../img/checkbox-on-disabled.svg);
+  background-repeat: no-repeat;
+}
+
+
+
+.filter-btn {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 auto;
+  border: none;
+}
+
+
+
+
+.button-transparent {
   background: transparent;
   border: 2px solid #ffffff;
   font-weight: 400;
@@ -793,9 +865,115 @@ input {
   padding: 6px 35px;
   display: block;
   outline: none;
+  max-width: 137px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.btn-transparent:hover {
+.button-transparent:hover {
   background-color: var(--basic-white);
   color: var(--basic-black);
+}
+
+.range-filter {
+  width: 330px;
+  color: var(--basic-white);
+  text-transform: uppercase;
+
+}
+
+.price-controls {
+  position: relative;
+  height: 36px;
+  margin-bottom: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background-color: var(--basic-white);
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.range-controls {
+  margin-bottom: 33px;
+  position: relative;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background-color: var(--basic-white);
+}
+
+.range-controls .toggle {
+  height: 4px;
+  width: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: var(--basic-silver-grey);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: -10px;
+  left: 0;
+  cursor: pointer;
+}
+
+.range-controls .toggle:hover {
+  height: 5px;
+  width: 5px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: var(--basic-silver-grey);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(255, 255, 255, 0.3);
+
+}
+
+.range-controls .toggle-min {
+  left: 0px;
+}
+
+.range-controls .toggle-max {
+  left: 250px;
 }
